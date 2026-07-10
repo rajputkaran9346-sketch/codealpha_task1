@@ -1,0 +1,43 @@
+# ----------------------------------------
+# Simple Rule-Based Chatbot
+# ----------------------------------------
+
+# Function to generate chatbot replies
+def chatbot():
+    print("===================================")
+    print("      Welcome to Python Chatbot")
+    print("Type 'bye' to exit the chatbot.")
+    print("===================================\n")
+
+    while True:
+        # Take input from user
+        user = input("You: ").lower()
+
+        # Predefined replies
+        if user == "hello":
+            print("Bot: Hi! Nice to meet you.")
+
+        elif user == "hi":
+            print("Bot: Hello! How can I help you?")
+
+        elif user == "how are you":
+            print("Bot: I am fine, thanks for asking!")
+
+        elif user == "what is your name":
+            print("Bot: My name is Python Chatbot.")
+
+        elif user == "who made you":
+            print("Bot: I was created  sumit sir .")
+
+        elif user == "thank you":
+            print("Bot: You're welcome!")
+
+        elif user == "bye":
+            print("Bot: Goodbye! Have a nice day.")
+            break
+
+        else:
+            print("Bot: Sorry, I don't understand that.")
+
+# Call the function
+chatbot()
